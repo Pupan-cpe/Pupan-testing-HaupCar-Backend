@@ -6,7 +6,9 @@ module.exports = (sequelize, DataTypes) => {
     model: DataTypes.STRING,
     annotation: DataTypes.STRING
   }, {
-    tableName: 'Car'
+    tableName: 'Car',
+    timestamps: false
+
 
   });
   Car.associate = function(models) {
