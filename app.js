@@ -7,6 +7,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var carRouter = require('./routes/car');
 
+var fruitRouter = require('./routes/fruit');
+
+
 var cors = require('cors')
 const fs = require('fs');
 
@@ -27,5 +30,8 @@ app.use('/api/v1/car', carRouter);
 app.use('/test', indexRouter);
 
 app.use('/users', usersRouter);
+
+app.use('/api/v1/fruit', fruitRouter);
+
 
 module.exports = app;
